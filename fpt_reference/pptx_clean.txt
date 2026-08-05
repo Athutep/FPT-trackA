@@ -1,0 +1,127 @@
+﻿python : Traceback (most recent call last):
+所在位置 行:1 字符: 1
++ python -c @"
++ ~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Traceback (most recent call last)::String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+  File "<string>", line 26, in <module>
+    print(f'  {p}')
+    ~~~~~^^^^^^^^^^
+UnicodeEncodeError: 'gbk' codec can't encode character '\u2022' in position 2: illegal multibyte sequence
+======================================================================
+FILE: 第1组 工具验证型HLS优化智能体.pptx
+======================================================================
+--- slide1.xml ---
+  面向FPT Track A的工具验证型HLS优化智能体
+  止于至善
+  成     员：陈际舟  文皓玉  胡笑歌
+  A Tool-Verified HLS Optimization Agent for FPT Track A
+  Verified-Candidate Loop（VCL）
+--- slide2.xml ---
+  Track A 是带硬门控和预算约束的候选搜索
+  预算约束
+  要解决的问题是什么
+  硬门控
+  止于至善
+  接口类型、顶层函数、输入类型；C仿真；HLS综合；频率≥100MHz；资源使用未超限；联合仿真
+  1.Agent得到什么输入？
+  2.搜索什么？
+  修复类任务：正确且相对优秀的结果
+  优化类任务：相较初始更为优秀的结果
+  3.什么情况下允许更新结果？
+  满足硬性要求 且 量化结果更优
+  硬件质量评分QHW
+  门控通过后，候选才进入QHW比较
+  如何同时度量性能改善与资源代价？
+--- slide3.xml ---
+  QHW：更快不等于更优
+  PPA=Power（功耗）+Performance（性能）+Area（面积）
+  参考文献：1.https://docs.amd.com/r/2024.1-English/ug1399-vitis-hls/Synthesis-Summary2.https://arxiv.org/abs/2207.07917
+  rP ：≈3.1×
+  Candidate 1 更快，但 LUT≈12×、FF≈22×，且时钟变差，因此 Q_HW从 0.7500 降至 0.5333。
+  FINAL EVALUATOR SCORE
+  95.72
+  Candidate 2 promoted
+  硬件质量如何计算？
+  3.1× 延迟改善仍可能是更差的硬件解
+--- slide4.xml ---
+  候选先证明“有效”，再证明“优于当前最优”
+  预算不足、门控失败或 QHW 未提升，都不会覆盖当前最佳；只有 Promote 才能更新 b。
+  晋升条件：候选通过全部适用门控，且 Q_HW 严格优于当前 verified fallback
+  Budget 决定“是否继续”｜
+  Validity 决定“能否比较”｜
+  Q_HW 决定“能否晋升”   |
+--- slide5.xml ---
+  Verified-Candidate Loop（VCL）工作流
+  Agent 在预算约束下生成候选，通过完整验证与 QHW 比较决定是否更新最优结果，并将失败证据反馈至下一轮优化。
+--- slide6.xml ---
+  测试集构成与评测模型选择
+  测试数据来源于 AMD/Xilinx 的两个公开 GitHub 仓库：Xilinx/Vitis-HLS-Introductory-Examples（109 个任务）和 Xilinx/Vitis_Accel_Examples（41 个任务）。
+  功能正确未经优化
+  编译失败 or 综合失败
+  csim失败 or cosim失败
+  存在死锁等结构性问题
+  150 个任务覆盖六类 HLS 能力
+  3 种模型覆盖不同参数规模与架构
+--- slide7.xml ---
+  类别差距主要集中在生成与结构修复
+  每类 25 个任务；单元格表示成功完成任务数 / 25。此处 QoR 100% 表示该类别 25/25 完成，不代表 QHW 得分为 100
+--- slide8.xml ---
+  完成率均超过 92%，但结构修复均分仅 40–45
+--- slide9.xml ---
+  创新点与局限性
+  COVERAGE
+  证据来自 2 个 AMD repo、单工具、单器件、单时钟；暂无 power。CoSim 只覆盖 manifest 中 25 个 Structural tasks；目标平台Alveo U55C。
+  VALIDATED / REQUIRED INPUTS
+  Agent 当前依赖成熟的工程输入，
+  跨工具与跨器件能力尚未完成验证。
+  01
+  公开 testbench 与 build script；明确接口、容差和 target
+  02
+  提供有效 baseline / reference，支持候选的相对质量比较
+  03
+  任务明确是否需要 CoSim，并使用固定任务清单与工具预算
+  局限性
+  创新点
+  KEY CONTRIBUTIONS
+  把“生成候选”变成“验证后晋升”，
+  让硬件证据而不是模型置信度控制迭代。
+  01
+  提出综合有效性能与最坏资源质量的QHW指标
+  02
+  将QHW嵌入VCL，控制Optimize候选是否更新best-so-far
+  03
+  复用工具诊断与实测退化证据，约束下一轮候选生成
+  04
+  通过预算准入与verified fallback，避免不完整验证污染结果
+  下一步计划
+  NEXT ITERATION
+  先提高 Optimize 的质量上限，
+  再扩展任务输入、工具链与器件边界。
+  01
+  增强循环、访存、流水线与 Dataflow 的定向优化策略
+  02
+  扩展均衡、速度优先和面积优先的 QHW 配置
+  03
+  增加工程输入与 testbench 的完整性诊断和辅助修复
+--- slide10.xml ---
+  感谢观看！
+  止于至善
+  Thanks for watching!
+  成     员：陈际舟  文皓玉  胡笑歌
+======================================================================
+FILE: 第4组 面向 Vitis HLS 的预算感知闭环修复与优化Agent.pptx
+======================================================================
+--- slide1.xml ---
+  面向 Vitis HLS 的
+  预算感知闭环修复与优化 Agent
+  FPT 2026 Track-A 项目成果汇报
+  康宋睿 · 曹忆璇 · 张容慧
+  循环迭代生成代码
+  Vitis 反馈闭环
+  证据驱动晋升
+  关键词：Action Schema · Budget Policy · CSim/Synth/CoSim · Bitwidth Optimization
+--- slide2.xml ---
+  HLS 优化的难点：闭环取舍
+  传统流程的难点
