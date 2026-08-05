@@ -1,0 +1,145 @@
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2025.2 (64-bit)
+Tool Version Limit: 2025.11
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_top projection 
+INFO: [HLS 200-1510] Running: set_part xcvp2802 
+ERROR: [HLS 200-1023] Part 'xcvp2802' is not installed.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2025.2 (64-bit)
+Tool Version Limit: 2025.11
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_top dummy 
+INFO: [HLS 200-1510] Running: set_part xcu250 
+ERROR: [HLS 200-1023] Part 'xcu250' is not installed.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2025.2 (64-bit)
+Tool Version Limit: 2025.11
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_top dummy 
+INFO: [HLS 200-1510] Running: set_part xcvu13p 
+ERROR: [HLS 200-1023] Part 'xcvu13p' is not installed.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2025.2 (64-bit)
+Tool Version Limit: 2025.11
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_top dummy 
+INFO: [HLS 200-1510] Running: set_part xc7z020 
+ERROR: [HLS 200-1023] Part 'xc7z020' is not installed.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2025.2 (64-bit)
+Tool Version Limit: 2025.11
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_top dummy 
+INFO: [HLS 200-1510] Running: set_part xc7a35t 
+ERROR: [HLS 200-1023] Part 'xc7a35t' is not installed.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2025.2 (64-bit)
+Tool Version Limit: 2025.11
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_top dummy 
+INFO: [HLS 200-1510] Running: set_part xcku5p 
+ERROR: [HLS 200-1023] Part 'xcku5p' is not installed.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2025.2 (64-bit)
+Tool Version Limit: 2025.11
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_top dummy 
+INFO: [HLS 200-1510] Running: set_part xcu55c 
+ERROR: [HLS 200-1023] Part 'xcu55c' is not installed.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2025.2 (64-bit)
+Tool Version Limit: 2025.11
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_top dummy 
+INFO: [HLS 200-1510] Running: set_part xcvc1902-vsva2197-2MP-e-S 
+ERROR: [HLS 200-1023] Part 'xcvc1902-vsva2197-2MP-e-S' is not installed.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2025.2 (64-bit)
+Tool Version Limit: 2025.11
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_top dummy 
+INFO: [HLS 200-1510] Running: set_part xcve2302-2csfva2197-2MP-e-S 
+ERROR: [HLS 200-1023] Part 'xcve2302-2csfva2197-2MP-e-S' is not installed.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2025.2 (64-bit)
+Tool Version Limit: 2025.11
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_top dummy 
+INFO: [HLS 200-1510] Running: set_part xcvp2802-vsva2197-2MP-e-S 
+ERROR: [HLS 200-1023] Part 'xcvp2802-vsva2197-2MP-e-S' is not installed.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2025.2 (64-bit)
+Tool Version Limit: 2025.11
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_top dummy 
+INFO: [HLS 200-1510] Running: set_part xcu250-figd2104-2L-e 
+INFO: [HLS 200-1611] Setting target device to 'xcu250-figd2104-2L-e'
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2025.2 (64-bit)
+Tool Version Limit: 2025.11
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [HLS 200-1611] Setting target device to 'xcu250-figd2104-2L-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_top dummy 
+INFO: [HLS 200-1510] Running: set_part xcvu9p-flga2104-2L-e 
+WARNING: [HLS 200-1610] Resetting target device to 'xcvu9p-flga2104-2L-e'
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2025.2 (64-bit)
+Tool Version Limit: 2025.11
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [HLS 200-1611] Setting target device to 'xcvu9p-flga2104-2L-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_top dummy 
+INFO: [HLS 200-1510] Running: set_part xcu55c-fsvh2892-2L-e 
+WARNING: [HLS 200-1610] Resetting target device to 'xcu55c-fsvh2892-2L-e'

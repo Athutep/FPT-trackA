@@ -1,0 +1,25 @@
+Track A: Budgeted End-to-End LLM4HLS Agent
+
+This track requires participants to develop an autonomous agent capable of addressing a range of HLS tasks under constrained tool invocation budgets. Each task is provided as a problem statement that may contain at least one of several initial conditions:
+
+A functionally correct but unoptimized baseline C/C++ implementation.
+An HLS design that fails compilation or synthesis.
+An HLS design that compiles successfully but fails C simulation, co-simulation, or hidden functional tests.
+An HLS design that exhibits structural issues such as deadlock, invalid streaming behavior, or severe resource inefficiency.
+Other problems related to HLS compilation.
+The agent must iteratively generate, repair, or optimize candidate HLS code by calling the provided evaluation interfaces. A successful submission should demonstrate the following complete workflow:
+
+Interpretation of the task specification and initial code.
+Generation or modification of HLS C/C++ code (including pragmas).
+Invocation of tool feedback interfaces.
+Parsing of logs and reports for issue diagnosis.
+Prioritization of correctness issue resolution before PPA optimization.
+Termination within the assigned budget constraints.
+Each task will include the following artifacts:
+
+Source files: Baseline C/C++, with several problems indicated as above.
+Testbench: Public correctness tests, building scripts (e.g. Makefile).
+Specification: Interface contract, data types, numerical tolerance, and design constraints.
+Target constraints: FPGA platform, HLS tool version, clock target, and optional resource limits.
+Budget configuration: Maximum iterations allowed calls to csim, cosim, and synth, or an equivalent unified credit budget.
+Submitted entries will be evaluated based on the following primary dimensions: correctness, PPA metrics, and problem difficulties.
