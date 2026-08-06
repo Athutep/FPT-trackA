@@ -1,0 +1,6 @@
+# No third-party dependencies. The whole harness -- including the OpenRouter
+# LLM backend -- uses only the Python 3.12 standard library
+# (subprocess, tomllib, xml.etree, urllib, json, dataclasses).
+#
+# Just set OPENROUTER_API_KEY (or fill it into llm4hls/config.py) to use a real
+# open-source model; the offline "scripted" backend needs nothing at all.
